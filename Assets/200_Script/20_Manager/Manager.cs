@@ -6,6 +6,10 @@ public class Manager : MonoBehaviour
     {
         SetDataManager();
         SetPoolManager();
+
+#if LOG
+        SetLogManager();
+#endif
     }
 
     public static DataManager Data { get; private set; }
@@ -23,4 +27,14 @@ public class Manager : MonoBehaviour
         Pool = GetComponentInChildren<PoolManager>();
         Pool.Initialize();
     }
+
+
+#if LOG
+    public static LogManager Log { get; private set; }
+    private void SetLogManager()
+    {
+        Log = GetComponentInChildren<LogManager>();
+        Log.Initialize();
+    }
+#endif
 }

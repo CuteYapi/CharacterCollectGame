@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DataManager : MonoBehaviour
@@ -113,4 +114,6 @@ public class DataManager : MonoBehaviour
     }
 
     #endregion
+
+    public List<GachaData> GachaDatas = new List<GachaData>();
 }

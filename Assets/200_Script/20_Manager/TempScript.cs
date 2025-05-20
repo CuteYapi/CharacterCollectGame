@@ -5,10 +5,9 @@ public class TempScript : MonoBehaviour
 {
     private void Temp()
     {
-
     }
 
-    public void Start()
+    public void Update()
     {
 
     }
